@@ -39,7 +39,7 @@
             <div class="row min-vh-80 align-items-center z-index-2 position-relative text-center">
                 <div class="col-12">
                     <h1 class="display-2  text-white mb-4">Noma &amp; Dani</h1>
-                    <p class="font-weight-300 text-light  lead mb-5 ">Saturday July 24th, 2021 - 28 Chalmers Street, England. </p>
+                    <p class="font-weight-300 text-light  lead mb-5 ">Saturday July 24th, 2021 - Leicestershire Register, England. </p>
                     <a href="index.html#rsvp" class="btn btn-primary btn-wide-sm btn-sm  scroll">RSVP</a>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                 <div class="col-md-6 mb-5 mb-md-0">
                     <div class="pr-md-4">
                         <h1 class="font-secondary display-4">Save the date</h1>
-                        <p class="lead font-weight-300 text-dark-gray opacity-8">Saturday July 24th, 2021 - 28 Chalmers Street, England..</p>
+                        <p class="lead font-weight-300 text-dark-gray opacity-8">Saturday July 24th, 2021 - Leicestershire Register Anstey Frith House, Leicester Road, Glenfield LE3 8RN.</p>
                         <p class="mb-4 pr-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occae.</p>
                         <div class="countdown row text-center"></div>
                     </div>
@@ -422,11 +422,12 @@
                            </svg>
                         </div>
                         <h5 class="mb-0">Main Ceremony</h5>
-                        <h6 class="mb-5">16:00h - 17:00</h6>
-                        <p class="text-align-center">Holiday Inn
-                            <br>501 Route de Geary
-                            <br>England Town
-                            <br>(+123) 292 - 0100
+                        <h6 class="mb-5">17:00</h6>
+                        <p class="text-align-center">Leicestershire Register
+                            <br>Anstey Frith House
+                            <br>Leicester Road
+                            <br>Glenfield
+                            <br>LE3 8RN.
                         </p>
                     </div>
                 </div>
@@ -502,11 +503,11 @@
                            </svg>
                         </div>
                         <h5 class="mb-0 text-white">Wedding Party</h5>
-                        <h6 class="mb-5 text-white">17:00h - 19:00</h6>
-                        <p class="text-align-center">Holiday Inn
-                            <br>501 Route de Geary
-                            <br>England Town
-                            <br>(+123) 292 - 0100
+                        <h6 class="mb-5 text-white">19:00</h6>
+                        <p class="text-align-center">Holiday Inn - Wigston
+                            <br>299 leicester Road
+                            <br>Leicester
+                            <br>LE18 1JW
                         </p>
                     </div>
                 </div>
