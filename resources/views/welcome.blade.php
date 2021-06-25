@@ -70,7 +70,9 @@
                         <h1 class="font-secondary display-4">Save the date</h1>
                         <p class="lead font-weight-300 text-dark-gray opacity-8">Saturday July 24th, 2021 - Leicestershire Register Anstey Frith House, Leicester Road, Glenfield LE3 8RN.</p>
                         <p class="mb-4 pr-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occae.</p>
-                        <div class="countdown row text-center"></div>
+                        <div class="countdown row text-center">
+                            <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1 ">%d</span> <span class="label ">Day%!d</span></div></div> <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%H</span> <span class="label">Hour%!H</span></div></div> <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%M</span> <span class="label">Minute%!M</span></div></div> <div class="col"><div class="card card-body countdown-shadow p-3"><span class="counter text-primary mb-1">%S</span> <span class="label">Second%!S</span></div></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -171,7 +173,7 @@
                             </div>
                             <div>
                                 <h5 class="mb-0">First met</h5>
-                                <span class="small text-primary">October 2006</span>
+                                <span class="small text-primary">February 1999</span>
                             </div>
                         </li>
                         <li>
@@ -184,7 +186,7 @@
                             </div>
                             <div>
                                 <h5 class="mb-0">First Dating</h5>
-                                <span class="small text-primary">April 2007</span>
+                                <span class="small text-primary">April 1999</span>
                             </div>
                         </li>
                         <li>
@@ -197,7 +199,7 @@
                             </div>
                             <div>
                                 <h5 class="mb-0">Love began</h5>
-                                <span class="small text-primary">October 2007</span>
+                                <span class="small text-primary">August 1999</span>
                             </div>
                         </li>
                         <li>
@@ -210,7 +212,7 @@
                             </div>
                             <div>
                                 <h5 class="mb-0">Together since</h5>
-                                <span class="small text-primary">February 2008</span>
+                                <span class="small text-primary">August 2001</span>
                             </div>
                         </li>
                         <li>
@@ -223,7 +225,7 @@
                             </div>
                             <div>
                                 <h5 class="mb-0">He proposed</h5>
-                                <span class="small text-primary">September 2018</span>
+                                <span class="small text-primary">August 2010</span>
                             </div>
                         </li>
                     </ol>
@@ -863,7 +865,7 @@
 <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('js/jquery.countdown.min.js')}}"></script>
 <script src="{{asset('js/placeholders.min.js')}}"></script>
-{{--<script src="{{asset('js/instafeed.min.js')}}"></script>--}}
+<script src="{{asset('js/instafeed.min.js')}}"></script>
 <script src="{{asset('js/script.js')}}"></script>
 <!-- Google analytics -->
 <!-- End google analytics -->
