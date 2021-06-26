@@ -29,7 +29,9 @@
 <!--Wrapper-->
 <div class="wrapper">
     <!--Header-->
-
+    {{ $name ?? '' }}
+    {{ $phone ?? '' }}
+    {{ $confirmation ?? '' }}
     <!--End header-->
     <!--Hero section-->
     <section class="gradient-overlay gradient-overlay-dark ">
@@ -429,7 +431,7 @@
                             <br>Anstey Frith House
                             <br>Leicester Road
                             <br>Glenfield
-                            <br>LE3 8RN.
+                            <br>LE3 8RN
                         </p>
                     </div>
                 </div>
@@ -682,56 +684,98 @@
         <!--Container-->
         <div class="container spacer-one-bottom-lg">
             <!--Row-->
+            @if (isset($rsvp) && $rsvp == false )
             <div class="row justify-content-center">
                 <div class="col">
                     <div class=" mb-5 pb-5 text-center">
                         <h1 class="display-4 ">Wedding Registry</h1>
-                        <p class="w-md-40 mb-0 mx-auto text-dark-gray opacity-8">The best present you could possibly give us </p>
                     </div>
                 </div>
             </div>
-            <!--End row-->
-            <div class="row justify-content-center">
-                <div class="col-xl-5 col-lg-5 col-md-6">
-                    <form method="post">
-                        <div class="form-group">
-                            <label >Your Name</label>
-                            <input name="name" type="text" class="form-control form-control-lg" placeholder="Your name">
-                        </div>
-                        <div class="form-group">
-                            <label>Email Address</label>
-                            <input name="email" type="email" class="form-control form-control-lg" placeholder="Your email">
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group mb-1">
-                                    <label>Attending</label>
-                                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="text-center">
+                            <div class="mx-auto icon-round mb-4 mb-md-4  bg-icon-primary">
+                                <svg class="icon-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70.8 102.2" enable-background="new 0 0 70.8 102.2;" xml:space="preserve">
+                              <path class="st0" opacity="0.3" d="M35.4,70.8c5.4,0,10-1.9,13.9-5.8c3.8-3.8,5.8-8.5,5.8-13.9V19.7c0-5.4-1.9-10-5.8-13.9C45.4,1.9,40.8,0,35.4,0
+                                 c-5.4,0-10,1.9-13.9,5.8c-3.8,3.8-5.8,8.5-5.8,13.9v31.5c0,5.4,1.9,10,5.8,13.9C25.4,68.8,30,70.8,35.4,70.8z" fill="#E25D5D" />
+                                    <path class="st1" d="M69.6,40.5c-0.8-0.8-1.7-1.2-2.8-1.2c-1.1,0-2,0.4-2.8,1.2c-0.8,0.8-1.2,1.7-1.2,2.8v7.9
+                                 c0,7.6-2.7,14.1-8.1,19.4c-5.4,5.4-11.9,8.1-19.4,8.1c-7.6,0-14.1-2.7-19.4-8.1c-5.4-5.4-8.1-11.9-8.1-19.4v-7.9
+                                 c0-1.1-0.4-2-1.2-2.8c-0.8-0.8-1.7-1.2-2.8-1.2s-2,0.4-2.8,1.2C0.4,41.3,0,42.2,0,43.2v7.9C0,60.2,3,68,9.1,74.7
+                                 c6,6.7,13.5,10.5,22.4,11.5v8.1H15.7c-1.1,0-2,0.4-2.8,1.2c-0.8,0.8-1.2,1.7-1.2,2.8c0,1.1,0.4,2,1.2,2.8c0.8,0.8,1.7,1.2,2.8,1.2
+                                 H55c1.1,0,2-0.4,2.8-1.2c0.8-0.8,1.2-1.7,1.2-2.8c0-1.1-0.4-2-1.2-2.8c-0.8-0.8-1.7-1.2-2.8-1.2H39.3v-8.1c8.9-1,16.3-4.8,22.4-11.5
+                                 c6-6.7,9.1-14.6,9.1-23.6v-7.9C70.8,42.2,70.4,41.3,69.6,40.5z" fill="#E25D5D" />
+                           </svg>
                             </div>
-                            <div class="col">
-                                <div class="form-group rounded bg-white p-2 border">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="atttending-yes" name="atttending" class="custom-control-input">
-                                        <label class="custom-control-label" for="atttending-yes">Yes, I will be there</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group rounded bg-white p-2 border">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="atttending-no" name="atttending" class="custom-control-input">
-                                        <label class="custom-control-label" for="atttending-no">Sorry, I can't come</label>
-                                    </div>
-                                </div>
-                            </div>
+                            <blockquote>To be able to view the registration form please use the link provided to you.</blockquote>
+                            <small class="text-uppercase font-weight-600 text-dark upper-letter-space">Lots of love, Noma and Dani</small>
                         </div>
-                        <div class="form-group text-center">
-                            <button class="btn btn-lg btn-block btn-primary" type="submit">Confirm registry</button>
-                            <small class="mt-2 text-dark-gray opacity-8">You’ll recieve a confirmation email.</small>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
+
+            @else
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class=" mb-5 pb-5 text-center">
+                            <h1 class="display-4 ">Wedding Registry</h1>
+                            <p class="w-md-40 mb-0 mx-auto text-dark-gray opacity-8">The best present you could possibly give us </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--End row-->
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-5 col-md-6">
+                        <form method="post">
+                            @csrf
+                            <div class="form-group">
+                                <label >Your Name</label>
+                                <input name="name" type="text" class="form-control form-control-lg" placeholder="Your name" value="{{ $name ?? null }}" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input name="phone" type="phone" class="form-control form-control-lg" placeholder="Your email" value="{{ $phone ?? null }}" disabled>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group mb-1">
+                                        <label>Attending</label>
+                                    </div>
+                                </div>
+                                <?php
+                                $confirmed = false;
+                                if (isset($confirmation) && $confirmation == true) {
+                                    $confirmed = "checked";
+                                }
+                                ?>
+                                <div class="col">
+                                    <div class="form-group rounded bg-white p-2 border">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="atttending-yes" name="atttending" class="custom-control-input" {{ $confirmed == true ? 'checked' : '' }}>
+                                            <label class="custom-control-label" for="atttending-yes">Yes, will be there</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group rounded bg-white p-2 border">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="atttending-no" name="atttending" class="custom-control-input" {{ $confirmed == false ? 'checked' : '' }} >
+                                            <label class="custom-control-label" for="atttending-no">Sorry, won't make it</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group text-center">
+                                <button class="btn btn-lg btn-block btn-primary" type="submit">Confirm registry</button>
+                                <small class="mt-2 text-dark-gray opacity-8">You’ll recieve a confirmation email.</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            @endif
+
+
         </div>
         <!--End container-->
         <div class="curved-decoration">
