@@ -1,12 +1,12 @@
-/* 
+/*
 
 Foxewedding - Beautiful Wedding html template
-Copyright 2019  www.mutationmedia.net 
-Created by : mutationthemes  
+Copyright 2019  www.mutationmedia.net
+Created by : mutationthemes
 
 */
 
-/* Table of Content ================================================== 
+/* Table of Content ==================================================
 
 1.Preloader
 2.Site wrapper
@@ -76,22 +76,22 @@ Created by : mutationthemes
 
 @keyframes spinner-color {
     0%, 100% {
-        stroke: #e25d5d;
+        stroke: #CCA43D;
     }
     20% {
         stroke: #df6e6e;
     }
     40% {
-        stroke: #e25d5d;
+        stroke: #CCA43D;
     }
     60% {
         stroke: #df6e6e;
     }
     80% {
-        stroke: #e25d5d;
+        stroke: #CCA43D;
     }
 
-    
+
 }
  @keyframes spinner-dash {
      0% {
@@ -158,7 +158,7 @@ Created by : mutationthemes
     width:7rem;
 }
 .header-navbar {
-    padding:0; 
+    padding:0;
 }
 .header-navbar .navbar-brand{
     padding-top: 1.2rem;
@@ -234,7 +234,7 @@ Created by : mutationthemes
     margin-left: 0;
     margin-right: 50%;
     flex-direction: row-reverse;
-    text-align: right; 
+    text-align: right;
 }
 .story li:not(:last-child):after {
     content: '';
@@ -245,7 +245,7 @@ Created by : mutationthemes
     height: 3rem;
     background: #bfbbb8;
     opacity: .5;
-    
+
 }
 .story li:not(:last-child) {
      position: relative;
@@ -365,7 +365,7 @@ ul.instafeed-list li a{
 /*Miscellaneous*/
 
 ::-moz-selection {
-    background: #e25d5d;
+    background: #CCA43D;
     color: #ffffff;
 }
  .gradient-overlay:before {
@@ -458,7 +458,7 @@ a,::before
     vertical-align: middle;
     text-align: center;
     color: #fff;
-    background-color: #e25d5d;
+    background-color: #CCA43D;
     width: 2.35rem;
     height: 2.35rem;
     font-size: 0.75rem;
@@ -516,7 +516,7 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
     background: rgba(255, 255, 255, 0.1) !important;
 }
 .bg-primary-svg {
-  fill: #e25d5d;
+  fill: #CCA43D;
 }
 .bg-secondary-svg {
   fill: #fff9f5;
@@ -546,7 +546,7 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   font-family: 'Playfair Display', serif;
 }
 .card.bg-primary{
-  border-color: #e25d5d;
+  border-color: #CCA43D;
 }
 .o-hidden{
   overflow: hidden;
@@ -773,7 +773,7 @@ ul.instafeed-list li {
     padding-bottom: 1.375rem;
     padding-right: 0.75rem;
     padding-left:0.75rem;
-} 
+}
 }
 @media (max-width: 767.98px) {
 }

@@ -162,7 +162,7 @@ sup {
 }
 
 a {
-  color: #e25d5d;
+  color: #CCA43D;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6,
     margin-bottom: .5rem;
     font-family: inherit;
     line-height: 1.5;
-    color: #000000; 
+    color: #000000;
     font-weight: 400;
 
 }
@@ -2515,14 +2515,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #ffffff;
-  background-color: #e35d5d;
-  border-color: #e35d5d;
+  background-color: #CCA43D;
+  border-color: #CCA43D;
 }
 
 .btn-primary:hover {
   color: #fff;
   background-color: #df6e6e;
-  border-color: #e35d5d;
+  border-color: #CCA43D;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2539,8 +2539,8 @@ fieldset:disabled a.btn {
 .show > .btn-primary.dropdown-toggle {
    color: #fff;
 background-color: #df6e6e;
-  border-color: #e35d5d;
-  
+  border-color: #CCA43D;
+
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -3660,7 +3660,7 @@ tbody.collapse.show {
 
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #fff;
-  background-color: #e25d5d;
+  background-color: #CCA43D;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
@@ -3747,7 +3747,7 @@ tbody.collapse.show {
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #e25d5d;
+  background-color: #CCA43D;
   border: none;
 }
 
@@ -4890,7 +4890,7 @@ border-color: rgba(21, 42, 73, 0.1);
     border-radius: 0.3rem;
     letter-spacing: 0.055rem;
     color: #fff;
-    background-color: #e25d5d;
+    background-color: #CCA43D;
     text-transform: uppercase;
 }
 
@@ -6158,7 +6158,7 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #e25d5d !important;
+  background-color: #CCA43D !important;
 }
 
 .bg-primary-2 {
@@ -9273,7 +9273,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #e25d5d !important;
+  color: #CCA43D !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9437,4 +9437,4 @@ a.text-dark-gray:hover, a.text-dark-gray:focus {
     border: 1px solid #ddd !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map 
+/*# sourceMappingURL=bootstrap.css.map

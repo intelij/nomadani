@@ -132,7 +132,7 @@ button::-moz-focus-inner {
   text-decoration: none;
   text-align: center;
   padding: 0 0 18px 10px;
-  color: #e25d5d;
+  color: #CCA43D;
   font-style: normal;
   font-size: 28px;
   font-family: Arial, Baskerville, monospace; }
@@ -147,7 +147,7 @@ button::-moz-focus-inner {
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
-  color: #e25d5d;
+  color: #CCA43D;
   right: -6px;
   text-align: right;
   padding-right: 6px;
