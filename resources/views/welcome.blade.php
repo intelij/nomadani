@@ -672,10 +672,11 @@
             <div class="row justify-content-between z-index-3 position-relative align-items-center">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <h1 class="display-4 text-white">Gift Registry</h1>
-                    <p class="lead text-white mb-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occae. </p>
+                    <p class="lead text-white mb-0"> Your presence at our wedding is present enough but if we are honored with a gift from you, a monetary gift will be very much appreciated. </p>
                 </div>
                 <div class="col-md-5">
-                    <small class="text-uppercase mb-5 font-weight-600 text-light upper-letter-space">Where to Register</small>
+                    <h1 class="display-4 text-white">Accommodation</h1>
+                    <p class="text-uppercase mb-5 font-weight-600 text-light upper-letter-space">Where to Register</p>
                 </div>
             </div>
         </div>
@@ -688,7 +689,7 @@
             <div class="row justify-content-center">
                 <div class="col">
                     <div class=" mb-5 pb-5 text-center">
-                        <h1 class="display-4 ">Wedding Registry</h1>
+                        <h1 class="display-4 ">RSVP Your Attendance</h1>
                     </div>
                 </div>
             </div>
@@ -709,7 +710,7 @@
                            </svg>
                             </div>
                             <blockquote>To be able to view the registration form please use the link provided to you.</blockquote>
-                            <small class="text-uppercase font-weight-600 text-dark upper-letter-space">Lots of love, Noma and Dani</small>
+                            <small class="text-uppercase font-weight-600 text-dark upper-letter-space">Lots of love <br/>Noma and Dani</small>
                         </div>
                     </div>
                 </div>
