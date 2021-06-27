@@ -3,8 +3,8 @@
 <head>
     <!-- Metas -->
     <meta charset="utf-8">
-    <title>Noma & Dani - Our Special Day Wedding Invvite</title>
-    <meta name="description" content="">
+    <title>Noma & Dani - Our Special Day Wedding Invite</title>
+    <meta name="description" content="Noma & Dani - Our Special Day Wedding Invite.  So they are no longer two, but one flesh. Therefore what God has joined together, let no one separate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Css -->
     <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
