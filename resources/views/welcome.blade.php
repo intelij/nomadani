@@ -893,7 +893,7 @@
         </div>
     </section>
     <section class="footer-copyright spacer-double-sm bg-white text-center">
-        <p class="text-uppercase small text-muted d-block mb-0">&copy; {{ date('Y') }} all right reserved - Designed by <a href="http:www.fnkdesigns.co.uk"> FNK Designs LTD.</a></p>
+        <p class="text-uppercase small text-muted d-block mb-0">&copy; {{ date('Y') }} all rights reserved - Designed by <a href="http//:www.fnkdesigns.co.uk" target="_blank"> FNK Designs LTD.</a></p>
     </section>
     <!--To the top-->
     <a class="scroll-to-top scroll" href="index.html#wrapper">
