@@ -739,7 +739,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Phone Number</label>
-                                <input name="phone" type="phone" class="form-control form-control-lg" placeholder="Your email" value="{{ $phone ?? null }}" disabled>
+                                <input name="phone" type="phone" class="form-control form-control-lg" placeholder="Phone number" value="{{ $phone ?? null }}" disabled>
                             </div>
                             <div class="form-group">
                                 <label>Number of guests</label>
