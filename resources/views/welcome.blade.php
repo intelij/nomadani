@@ -741,6 +741,10 @@
                                 <label>Phone Number</label>
                                 <input name="phone" type="phone" class="form-control form-control-lg" placeholder="Your email" value="{{ $phone ?? null }}" disabled>
                             </div>
+                            <div class="form-group">
+                                <label>Number of guests</label>
+                                <input name="number" type="number" class="form-control form-control-lg" placeholder="0" value="{{ $number ?? null }}" >
+                            </div>
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group mb-1">
