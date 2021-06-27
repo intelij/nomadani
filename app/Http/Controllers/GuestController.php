@@ -19,9 +19,9 @@ class GuestController extends Controller
     public function edit($phone)
     {
         $payload = [
-            'name' => 'Khululekani Mkhonza',
-            'phone' => '07983951875',
-            'confirmation' => false,
+//            'name' => 'Khululekani Mkhonza',
+//            'phone' => '07983951875',
+//            'confirmation' => false,
         ];
 
         return view('welcome', $payload);
