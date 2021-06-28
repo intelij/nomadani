@@ -566,8 +566,8 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <div class="text-center">
-                            <blockquote>To be able to view the registration form please enter your phone number below.</blockquote>
-                            <small class="text-uppercase font-weight-600 text-dark upper-letter-space">Enter Mobile Number</small>
+                            <blockquote class="text-uppercase font-weight-600 text-dark upper-letter-space">To access the registration form please enter your phone number below.</blockquote>
+{{--                            <small class="text-uppercase font-weight-600 text-dark upper-letter-space">Enter Mobile Number</small>--}}
                             <form method="post" action="{{ route('retrieve') }}">
                                 @csrf
                                 <div class="input-group mb-2">
