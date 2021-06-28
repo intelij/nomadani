@@ -510,7 +510,7 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
     z-index: 100;
 }
 .bg-icon-primary {
-    background: rgba(226, 93, 93,0.05) !important;
+    background: #000000;
 }
 .bg-icon-white {
     background: rgba(255, 255, 255, 0.1) !important;
@@ -802,3 +802,8 @@ h5, .h5 {
 @media (min-width: 1200px) {
 }
 /*End mediaqueries*/
+.btn-primary:hover {
+    color: #CCA43D;
+    background-color: #000000;
+    border-color: #000000;
+}

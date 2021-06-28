@@ -29,9 +29,6 @@
 <!--Wrapper-->
 <div class="wrapper">
     <!--Header-->
-    {{ $name ?? '' }}
-    {{ $phone ?? '' }}
-    {{ $confirmation ?? '' }}
     <!--End header-->
     <!--Hero section-->
     <section class="gradient-overlay gradient-overlay-dark ">
@@ -72,8 +69,9 @@
                     <div class="pr-md-4">
                         <h1 class="font-secondary display-4">Save the date</h1>
                         <p class="lead font-weight-300 text-dark-gray opacity-8">Saturday July 24th, 2021  at 5:30PM - Leicestershire Register Anstey Frith House, Leicester Road, Glenfield LE3 8RN.</p>
+                        <p class="lead font-weight-300 text-dark-gray opacity-8"><strong style="color: #cca53d!important;">Regrettably, due to number restrictions, we are unable to accommodate children or any extra parties other than the invited guests.  Thank you for understanding</strong><br/></p>
                         <p class="lead font-weight-300 text-dark-gray opacity-8">Contact Details.</p>
-                        <p>Mrs S Mtshali - 07476214764
+                        <p class="lead font-weight-300 text-dark-gray opacity-8">Mrs S Mtshali - 07476214764
                             <br/>Mrs B Lunga - 07758237423</p>
                         <div class="countdown row text-center">
 {{--                            <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1 ">%d</span> <span class="label ">Day%!d</span></div></div> <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%H</span> <span class="label">Hour%!H</span></div></div> <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%M</span> <span class="label">Minute%!M</span></div></div> <div class="col"><div class="card card-body countdown-shadow p-3"><span class="counter text-primary mb-1">%S</span> <span class="label">Second%!S</span></div></div>--}}
@@ -296,138 +294,6 @@
                 </div>
                 <div class="col-md-6 col-lg-4 d-flex mb-4 mb-lg-0">
                     <div class="card card-body justify-content-between">
-                        <div class="icon-round mb-5 mb-md-5  bg-icon-primary">
-{{--                            <svg class="icon-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 156.016 144" enable-background="new 0 0 156.016 144" xml:space="preserve">--}}
-{{--                              <g>--}}
-{{--                                  <g>--}}
-{{--                                      <g>--}}
-{{--                                          <path fill="#CCA43D" d="M46.0314,41.7797l-2.7211-2.7211c-1.0296-1.0296-2.6989-1.0296-3.7282,0--}}
-{{--                                          c-1.0296,1.0296-1.0296,2.6986,0,3.7282l2.7211,2.7211c0.5147,0.515,1.1896,0.7722,1.864,0.7722--}}
-{{--                                          c0.6743,0,1.3496-0.2572,1.864-0.7722C47.0611,44.4783,47.0611,42.8093,46.0314,41.7797z" />--}}
-{{--                                      </g>--}}
-{{--                                  </g>--}}
-{{--                                  <g>--}}
-{{--                                      <g>--}}
-{{--                                          <path fill="#CCA43D" d="M45.5076,109.9846c-1.029-1.0296-2.6983-1.0296-3.7282,0l-2.0709,2.0706--}}
-{{--                                          c-1.0296,1.0296-1.0296,2.6989,0,3.7285c0.5147,0.515,1.1896,0.7722,1.864,0.7722c0.6743,0,1.3496-0.2572,1.864-0.7722--}}
-{{--                                          l2.0709-2.0703C46.5372,112.6834,46.5372,111.0142,45.5076,109.9846z" />--}}
-{{--                                      </g>--}}
-{{--                                  </g>--}}
-{{--                                  <g>--}}
-{{--                                      <g>--}}
-{{--                                          <g>--}}
-{{--                                              <path fill="#CCA43D" d="M108.9037,65.5264H90.4893V47.7202c0-1.4559-1.1799-2.6364-2.6364-2.6364H68.1625--}}
-{{--                                             c-1.4559,0-2.6364,1.1805-2.6364,2.6364v17.8062H47.1113c-1.4559,0-2.6364,1.1805-2.6364,2.6364v19.69--}}
-{{--                                             c0,1.456,1.1805,2.6364,2.6364,2.6364h18.4148v50.8743c0,1.4559,1.1805,2.6364,2.6364,2.6364h19.6903--}}
-{{--                                             c1.4562,0,2.6364-1.1805,2.6364-2.6364v-31.784c0-1.4559-1.1799-2.6364-2.6364-2.6364c-1.4566,0-2.6364,1.1805-2.6364,2.6364--}}
-{{--                                             v29.1476H70.7986V87.8528c0-1.4559-1.1805-2.6364-2.6364-2.6364H49.7474V70.7992h18.4148c1.4559,0,2.6364-1.1805,2.6364-2.6364--}}
-{{--                                             V50.3566h14.4178v17.8062c0,1.4559,1.1799,2.6364,2.6364,2.6364h18.4145v14.4175H87.8528c-1.4563,0-2.6364,1.1805-2.6364,2.6364--}}
-{{--                                             v13.759c0,1.4559,1.1799,2.6364,2.6364,2.6364c1.4566,0,2.6364-1.1805,2.6364-2.6364V90.4896h18.4145--}}
-{{--                                             c1.4562,0,2.6364-1.1805,2.6364-2.6364v-19.69C111.5401,66.7069,110.36,65.5264,108.9037,65.5264z" />--}}
-{{--                                          </g>--}}
-{{--                                      </g>--}}
-{{--                                      <g opacity="0.3">--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M78.3782,0c-1.4559,0-2.6364,1.1805-2.6364,2.6364v27.1434c0,1.4559,1.1805,2.6364,2.6364,2.6364--}}
-{{--                                                c1.4563,0,2.6364-1.1805,2.6364-2.6364V2.6364C81.0146,1.1802,79.8348,0,78.3782,0z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M153.3795,75.7418h-10.9263c-1.4562,0-2.6364,1.1805-2.6364,2.6364--}}
-{{--                                                c0,1.4559,1.1802,2.6364,2.6364,2.6364h10.9263c1.4563,0,2.6364-1.1805,2.6364-2.6364--}}
-{{--                                                C156.016,76.9223,154.8355,75.7418,153.3795,75.7418z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M135.1888,75.7418h-8.9526c-1.4562,0-2.6364,1.1805-2.6364,2.6364--}}
-{{--                                                c0,1.4559,1.1802,2.6364,2.6364,2.6364h8.9526c1.4562,0,2.6364-1.1805,2.6364-2.6364--}}
-{{--                                                C137.8252,76.9223,136.645,75.7418,135.1888,75.7418z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M133.4302,23.1099c-1.03-1.0296-2.6989-1.0296-3.7285,0l-19.1933,19.1933--}}
-{{--                                                c-1.0296,1.0296-1.0296,2.6986,0,3.7282c0.5147,0.515,1.1896,0.7722,1.864,0.7722c0.6746,0,1.3496-0.2572,1.8646-0.7722--}}
-{{--                                                l19.1933-19.1933C134.4599,25.8085,134.4599,24.1389,133.4302,23.1099z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M37.6864,33.434l-10.848-10.848c-1.0293-1.0296-2.6986-1.0296-3.7282,0--}}
-{{--                                                c-1.0296,1.0296-1.0296,2.6986,0,3.7282l10.848,10.848c0.5147,0.515,1.1896,0.7722,1.864,0.7722--}}
-{{--                                                c0.6743,0,1.3496-0.2572,1.864-0.7722C38.716,36.1326,38.716,34.4637,37.6864,33.434z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M29.7799,75.0013H2.6364C1.1805,75.0013,0,76.1818,0,77.6378c0,1.4559,1.1805,2.6364,2.6364,2.6364--}}
-{{--                                                h27.1434c1.4559,0,2.6364-1.1805,2.6364-2.6364C32.4163,76.1818,31.2358,75.0013,29.7799,75.0013z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M36.8758,118.6163c-1.0293-1.0293-2.6986-1.0296-3.7282,0l-10.5612,10.5612--}}
-{{--                                                c-1.0296,1.0296-1.0296,2.6986,0,3.7282c0.5147,0.515,1.1896,0.7722,1.864,0.7722s1.3496-0.2572,1.864-0.7722l10.5612-10.5612--}}
-{{--                                                C37.9055,121.3149,37.9055,119.646,36.8758,118.6163z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M132.9067,129.7014l-19.1936-19.1933c-1.03-1.0293-2.6989-1.0296-3.7285,0--}}
-{{--                                                c-1.0296,1.0296-1.0296,2.6986,0,3.7282l19.1933,19.1933c0.515,0.515,1.1896,0.7722,1.8643,0.7722s1.3496-0.2572,1.8646-0.7722--}}
-{{--                                                C133.9363,132.4,133.9363,130.7307,132.9067,129.7014z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M62.3311,32.3014l-6.4067-15.4602c-0.557-1.345-2.0998-1.9837-3.4448-1.4264--}}
-{{--                                                c-1.3453,0.5576-1.9837,2.0995-1.4264,3.4448l6.4067,15.4602c0.4208,1.015,1.4023,1.6278,2.4368,1.6278--}}
-{{--                                                c0.3364,0,0.6783-0.0646,1.008-0.2014C62.2498,35.1889,62.8881,33.6467,62.3311,32.3014z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M140.6036,52.4826c-0.5576-1.3453-2.0992-1.9843-3.4448-1.4267l-15.4599,6.4027--}}
-{{--                                                c-1.345,0.557-1.9843,2.0992-1.4273,3.4445c0.4208,1.0156,1.4023,1.6281,2.4371,1.6281c0.3361,0,0.678-0.0646,1.0077-0.2014--}}
-{{--                                                l15.4599-6.4027C140.5213,55.3698,141.1606,53.8279,140.6036,52.4826z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M104.2208,15.6942c-1.3438-0.5567-2.8869,0.0811-3.4445,1.4264l-6.4067,15.4639--}}
-{{--                                                c-0.557,1.3453,0.0817,2.8878,1.4267,3.4448c0.3297,0.1368,0.6713,0.2014,1.0077,0.2014c1.0345,0,2.016-0.6128,2.4368-1.6278--}}
-{{--                                                l6.4067-15.4639C106.2051,17.7937,105.5664,16.2519,104.2208,15.6942z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M34.5999,56.774l-15.4602-6.4031c-1.345-0.5567-2.8872,0.0817-3.4445,1.4267--}}
-{{--                                                c-0.557,1.3453,0.082,2.8872,1.427,3.4445l15.4602,6.4031c0.3297,0.1368,0.6713,0.2014,1.0077,0.2014--}}
-{{--                                                c1.0345,0,2.0163-0.6131,2.4368-1.6281C36.5842,58.8732,35.9455,57.331,34.5999,56.774z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M35.7441,95.114c-0.557-1.3453-2.0998-1.984-3.4448-1.4267L16.843,100.09--}}
-{{--                                                c-1.3453,0.557-1.984,2.0995-1.4267,3.4445c0.4208,1.0153,1.4023,1.6281,2.4368,1.6281c0.3364,0,0.678-0.0646,1.008-0.2014--}}
-{{--                                                l15.4562-6.4027C35.6624,98.0015,36.3011,96.4593,35.7441,95.114z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                          <g>--}}
-{{--                                              <g>--}}
-{{--                                                  <path fill="#CCA43D" d="M138.8941,100.7756l-15.4599-6.4067c-1.3441-0.5567-2.8872,0.0808-3.4448,1.4261--}}
-{{--                                                c-0.5576,1.3453,0.0807,2.8872,1.4264,3.4448l15.4599,6.4067c0.3297,0.1368,0.6716,0.2014,1.008,0.2014--}}
-{{--                                                c1.0342,0,2.016-0.6128,2.4368-1.6278C140.8775,102.8752,140.2395,101.333,138.8941,100.7756z" />--}}
-{{--                                              </g>--}}
-{{--                                          </g>--}}
-{{--                                      </g>--}}
-{{--                                  </g>--}}
-{{--                              </g>--}}
-{{--                           </svg>--}}
-                        </div>
                         <h5 class="mb-0">Main Ceremony</h5>
                         <h6 class="mb-5">5:30PM</h6>
                         <p class="text-align-center">Leicestershire Register
@@ -700,20 +566,17 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <div class="text-center">
-                            <div class="mx-auto icon-round mb-4 mb-md-4  bg-icon-primary">
-                                <svg class="icon-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70.8 102.2" enable-background="new 0 0 70.8 102.2;" xml:space="preserve">
-                              <path class="st0" opacity="0.3" d="M35.4,70.8c5.4,0,10-1.9,13.9-5.8c3.8-3.8,5.8-8.5,5.8-13.9V19.7c0-5.4-1.9-10-5.8-13.9C45.4,1.9,40.8,0,35.4,0
-                                 c-5.4,0-10,1.9-13.9,5.8c-3.8,3.8-5.8,8.5-5.8,13.9v31.5c0,5.4,1.9,10,5.8,13.9C25.4,68.8,30,70.8,35.4,70.8z" fill="#CCA43D" />
-                                    <path class="st1" d="M69.6,40.5c-0.8-0.8-1.7-1.2-2.8-1.2c-1.1,0-2,0.4-2.8,1.2c-0.8,0.8-1.2,1.7-1.2,2.8v7.9
-                                 c0,7.6-2.7,14.1-8.1,19.4c-5.4,5.4-11.9,8.1-19.4,8.1c-7.6,0-14.1-2.7-19.4-8.1c-5.4-5.4-8.1-11.9-8.1-19.4v-7.9
-                                 c0-1.1-0.4-2-1.2-2.8c-0.8-0.8-1.7-1.2-2.8-1.2s-2,0.4-2.8,1.2C0.4,41.3,0,42.2,0,43.2v7.9C0,60.2,3,68,9.1,74.7
-                                 c6,6.7,13.5,10.5,22.4,11.5v8.1H15.7c-1.1,0-2,0.4-2.8,1.2c-0.8,0.8-1.2,1.7-1.2,2.8c0,1.1,0.4,2,1.2,2.8c0.8,0.8,1.7,1.2,2.8,1.2
-                                 H55c1.1,0,2-0.4,2.8-1.2c0.8-0.8,1.2-1.7,1.2-2.8c0-1.1-0.4-2-1.2-2.8c-0.8-0.8-1.7-1.2-2.8-1.2H39.3v-8.1c8.9-1,16.3-4.8,22.4-11.5
-                                 c6-6.7,9.1-14.6,9.1-23.6v-7.9C70.8,42.2,70.4,41.3,69.6,40.5z" fill="#CCA43D" />
-                           </svg>
-                            </div>
-                            <blockquote>To be able to view the registration form please use the link provided to you.</blockquote>
-                            <small class="text-uppercase font-weight-600 text-dark upper-letter-space">Lots of love <br/>Noma and Dani</small>
+                            <blockquote>To be able to view the registration form please enter your phone number below.</blockquote>
+                            <small class="text-uppercase font-weight-600 text-dark upper-letter-space">Enter Mobile Number</small>
+                            <form method="post" action="{{ route('retrieve') }}">
+                                @csrf
+                                <div class="input-group mb-2">
+                                    <input type="number" class="form-control" name="mobile" placeholder="mobile number">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    Retrieve Invite
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -735,15 +598,15 @@
                             @csrf
                             <div class="form-group">
                                 <label >Your Name</label>
-                                <input name="name" type="text" class="form-control form-control-lg" placeholder="Your name" value="{{ $name ?? null }}" disabled>
+                                <input name="name" type="text" class="form-control form-control-lg" placeholder="Your name" value="{{{ $name ?? null }}}" disabled>
                             </div>
                             <div class="form-group">
                                 <label>Phone Number</label>
-                                <input name="phone" type="phone" class="form-control form-control-lg" placeholder="Phone number" value="{{ $phone ?? null }}" disabled>
+                                <input name="phone" type="phone" class="form-control form-control-lg" placeholder="Phone number" value="{{{ $phone ?? null }}}" disabled>
                             </div>
                             <div class="form-group">
                                 <label>Number of guests</label>
-                                <input name="number" type="number" class="form-control form-control-lg" placeholder="0" value="{{ $number ?? null }}" >
+                                <input name="number_of_guests" type="number" class="form-control form-control-lg" placeholder="0" value="{{{ $number_of_guests ?? null }}}" min="0" max="{{ $number_of_guests }}">
                             </div>
                             <div class="row">
                                 <div class="col-12">

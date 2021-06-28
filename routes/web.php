@@ -20,6 +20,8 @@ use App\Http\Controllers\GuestController;
 
 Route::get('/', [GuestController::class, 'index']);
 
+Route::post('/retrieve', [GuestController::class, 'retrieve'])->name('retrieve');
+
 Route::get('/{number}', [GuestController::class, 'edit']);
 
 Route::post('/', [GuestController::class, 'confirm']);
