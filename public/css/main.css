@@ -813,3 +813,11 @@ h5, .h5 {
     background-color: #CCA43D;
     border-color: #CCA43D;
 }
+.bg-secondary-svg {
+    fill: #cca53d24;
+    overflow: hidden!important;
+}
+.bg-secondary {
+    background-color: #cca43d26 !important;
+    margin-top: 2px;
+}

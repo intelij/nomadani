@@ -69,7 +69,7 @@
                     <div class="pr-md-4">
                         <h1 class="font-secondary display-4">Save the date</h1>
                         <p class="lead font-weight-300 text-dark-gray opacity-8">Saturday July 24th, 2021  at 5:30PM - Leicestershire Register Anstey Frith House, Leicester Road, Glenfield LE3 8RN.</p>
-                        <p class="lead font-weight-300 text-dark-gray opacity-8"><strong style="color: #cca53d!important;">Regrettably, due to number restrictions, we are unable to accommodate children or any extra parties other than the invited guests.  Thank you for understanding</strong><br/></p>
+                        <p class="lead font-weight-300 text-dark-gray opacity-8"><strong style="color: #cca53d!important;">Regrettably, due to number restrictions, we are unable to accommodate children or any extra parties other than the invited guests.  Thank you for understanding.</strong><br/></p>
                         <p class="lead font-weight-300 text-dark-gray opacity-8">Contact Details.</p>
                         <p class="lead font-weight-300 text-dark-gray opacity-8">Mrs S Mtshali - 07476214764
                             <br/>Mrs B Lunga - 07758237423</p>
@@ -550,7 +550,7 @@
             </div>
         </div>
     </section>
-    <section id="rsvp" class="bg-secondary spacer-one-top-lg o-hidden ">
+    <section id="rsvp" class="bg-secondary spacer-one-top-lg o-hidden" style="background-color: #cca53d24;">
         <!--Container-->
         <div class="container spacer-one-bottom-lg">
             <!--Row-->
@@ -566,8 +566,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <div class="text-center">
-                            <blockquote class="text-uppercase font-weight-600 text-dark upper-letter-space">To access the registration form please enter your phone number below.</blockquote>
-{{--                            <small class="text-uppercase font-weight-600 text-dark upper-letter-space">Enter Mobile Number</small>--}}
+                            <blockquote class="text-uppercase font-weight-600 text-dark upper-letter-space" style="font-style: normal;">To access the registration form please enter your phone number below.</blockquote>
                             <form method="post" action="{{ route('retrieve') }}">
                                 @csrf
                                 <div class="input-group mb-2">
@@ -594,54 +593,77 @@
                 <!--End row-->
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-lg-5 col-md-6">
-                        <form method="post">
-                            @csrf
-                            <div class="form-group">
-                                <label >Your Name</label>
-                                <input name="name" type="text" class="form-control form-control-lg" placeholder="Your name" value="{{{ $name ?? null }}}" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label>Phone Number</label>
-                                <input name="phone" type="phone" class="form-control form-control-lg" placeholder="Phone number" value="{{{ $phone ?? null }}}" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label>Number of guests</label>
-                                <input name="number_of_guests" type="number" class="form-control form-control-lg" placeholder="0" value="{{{ $number_of_guests ?? null }}}" min="0" max="{{ $number_of_guests }}">
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group mb-1">
-                                        <label>Attending</label>
-                                    </div>
+
+                        @if ($confirmation == "on" && $invited == true)
+                            <blockquote class="text-uppercase font-weight-600 text-dark upper-letter-space" style="font-style: normal;">
+                                Thank you {{ $name }} for you response, this has been noted.
+                            </blockquote>
+                        @elseif($invited == false)
+
+                            <form method="post" action="{{ route('retrieve') }}">
+                                @csrf
+                                <div class="input-group mb-2">
+                                    <input type="number" class="form-control" name="mobile" placeholder="mobile number" value="{{{ $phone ?? null }}}">
                                 </div>
-                                <?php
-                                $confirmed = false;
-                                if (isset($confirmation) && $confirmation == true) {
-                                    $confirmed = "checked";
-                                }
-                                ?>
-                                <div class="col">
-                                    <div class="form-group rounded bg-white p-2 border">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="atttending-yes" name="atttending" class="custom-control-input" {{ $confirmed == true ? 'checked' : '' }}>
-                                            <label class="custom-control-label" for="atttending-yes">Yes, will be there</label>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    Retrieve Invite
+                                </button>
+
+                                <blockquote class="text-uppercase font-weight-100 text-dark upper-letter-space" style="font-style: normal; color: goldenrod;">
+                                    Sorry, we could not find you.
+                                </blockquote>
+                            </form>
+                        @else
+                            <form method="post" action="{{ route('process') }}">
+                                @csrf
+                                <div class="form-group">
+                                    <label >Your Name</label>
+                                    <input name="name" type="text" class="form-control form-control-lg" placeholder="Your name" value="{{{ $name ?? null }}}" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input name="phone" type="phone" class="form-control form-control-lg" placeholder="Phone number" value="{{{ $phone ?? null }}}" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <label>Number of guests</label>
+                                    <input name="number_of_guests" type="number" class="form-control form-control-lg" placeholder="0" value="{{{ $number_of_guests ?? null }}}" min="0" max="{{ $number_of_guests }}">
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group mb-1">
+                                            <label>Attending</label>
+                                        </div>
+                                    </div>
+                                    <?php
+                                    $confirmed = false;
+                                    if (isset($confirmation) && $confirmation == true) {
+                                        $confirmed = "checked";
+                                    }
+                                    ?>
+                                    <div class="col">
+                                        <div class="form-group rounded bg-white p-2 border">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="atttending-yes" name="atttending" class="custom-control-input" {{ $confirmed == true ? 'checked' : '' }}>
+                                                <label class="custom-control-label" for="atttending-yes">Yes, will be there</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group rounded bg-white p-2 border">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="atttending-no" name="atttending" class="custom-control-input" {{ $confirmed == false ? 'checked' : '' }} >
+                                                <label class="custom-control-label" for="atttending-no">Sorry, won't make it</label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="form-group rounded bg-white p-2 border">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="atttending-no" name="atttending" class="custom-control-input" {{ $confirmed == false ? 'checked' : '' }} >
-                                            <label class="custom-control-label" for="atttending-no">Sorry, won't make it</label>
-                                        </div>
-                                    </div>
+                                <div class="form-group text-center">
+                                    <button class="btn btn-lg btn-block btn-primary" type="submit">Confirm registry</button>
+                                    <small class="mt-2 text-dark-gray opacity-8">You’ll recieve a confirmation email.</small>
                                 </div>
-                            </div>
-                            <div class="form-group text-center">
-                                <button class="btn btn-lg btn-block btn-primary" type="submit">Confirm registry</button>
-                                <small class="mt-2 text-dark-gray opacity-8">You’ll recieve a confirmation email.</small>
-                            </div>
-                        </form>
+                            </form>
+                        @endif
+
                     </div>
                 </div>
             @endif
@@ -784,5 +806,13 @@
 <script src="{{asset('js/script.js')}}"></script>
 <!-- Google analytics -->
 <!-- End google analytics -->
+<script>
+    @if(Route::is('retrieve'))
+        $(function() {
+            $('html, body').animate({
+                scrollTop: $('#rsvp').offset().top}, 1000);
+        });
+    @endif
+</script>
 </body>
 </html>

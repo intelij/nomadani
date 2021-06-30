@@ -9,7 +9,7 @@ use Illuminate\View\View;
 class GuestController extends Controller
 {
     public function index() {
-        return view('welcome', ['rsvp' => false]);
+        return view('welcome', ['rsvp' => false, 'confirmation' => false]);
     }
 
     public function confirm(Request $request) {
@@ -50,7 +50,7 @@ class GuestController extends Controller
             ["Mr & Mrs Sibindi ",2,7876467778],
             ["Miss Rumbie & Welter ",4,7429396795],
             ["Mr Mabutho ",1,7833556945],
-            [" Miss Tumuza & Friend",3,7312278134],
+            ["Miss Tumuza & Friend",3,7312278134],
             ["Mrs M Mkwananzi &  Mum",3,7563033645],
             ["Mrs M walker ",1,7791465849],
             ["Mr & Mrs Mlilo",2,7832996294],
@@ -58,10 +58,13 @@ class GuestController extends Controller
         ];
 
         $mobile = (int) $request->get('mobile');
+
         $data = [
-            'name' => "Guest Mobile Not Registered",
+            'name' => null,
             'number_of_guests' => 0,
             'phone' => "0$mobile",
+            'confirmation' => $request->get('attending'),
+            'invited' => false
         ];
 
         foreach ($guests as $guest) {
@@ -70,11 +73,38 @@ class GuestController extends Controller
                     'name' => $guest[0],
                     'number_of_guests' => $guest[1],
                     'phone' => "0".$guest[2],
+                    'confirmation' => $request->get('attending'),
+                    'invited' => true
                 ];
             }
         }
+
+        dump($data);
+
+        return view('welcome', $data);
+
+    }
+
+    public function process(Request $request)
+    {
+
+
+        $input = $request->all();
+
+        dd($input);
+
+        $data = [
+            'name' => $input['name'],
+            'number_of_guests' => $input['number_of_guests'],
+            'phone' => $input['phone'],
+            'confirmation' => $request->get('attending'),
+        ];
+
+        dump($data);
 
         return view('welcome', $data);
 
     }
 }
+
+
