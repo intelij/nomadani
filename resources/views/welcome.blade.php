@@ -606,7 +606,7 @@
                                 </button>
 
                                 <blockquote class="text-uppercase font-weight-100 text-dark upper-letter-space" style="font-style: normal; color: goldenrod;">
-                                    Sorry, we could not find you.
+                                    Sorry, we could not find your reservation.
                                 </blockquote>
                             </form>
                         @else
