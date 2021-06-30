@@ -12,24 +12,6 @@ class GuestController extends Controller
         return view('welcome', ['rsvp' => false, 'confirmation' => false]);
     }
 
-    public function confirm(Request $request) {
-        return $request->all();
-    }
-
-    public function edit($phone)
-    {
-
-
-        $payload = [
-//            'name' => 'Khululekani Mkhonza',
-//            'phone' => '07983951875',
-//            'confirmation' => false,
-      ];
-
-        return view('welcome', $payload);
-
-    }
-
     public function retrieve(Request $request)
     {
         $guests = [
@@ -79,8 +61,6 @@ class GuestController extends Controller
             }
         }
 
-        dump($data);
-
         return view('welcome', $data);
 
     }
@@ -88,10 +68,7 @@ class GuestController extends Controller
     public function process(Request $request)
     {
 
-
         $input = $request->all();
-
-        dd($input);
 
         $data = [
             'name' => $input['name'],
@@ -100,9 +77,13 @@ class GuestController extends Controller
             'confirmation' => $request->get('attending'),
         ];
 
-        dump($data);
+        $file = fopen('guests_rsvp.csv','a');  // 'a' for append to file - created if doesn't exit
 
-        return view('welcome', $data);
+        fputcsv($file,$data);
+
+        fclose($file);
+
+        return view('process', $data);
 
     }
 }

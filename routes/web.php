@@ -21,7 +21,7 @@ use App\Http\Controllers\GuestController;
 Route::get('/', [GuestController::class, 'index']);
 
 Route::post('/retrieve', [GuestController::class, 'retrieve'])->name('retrieve');
-Route::post('/process', [GuestController::class, 'retrieve'])->name('process');
+Route::post('/process', [GuestController::class, 'process'])->name('process');
 
 Route::get('/{number}', [GuestController::class, 'edit']);
 

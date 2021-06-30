@@ -594,11 +594,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-lg-5 col-md-6">
 
-                        @if ($confirmation == "on" && $invited == true)
-                            <blockquote class="text-uppercase font-weight-600 text-dark upper-letter-space" style="font-style: normal;">
-                                Thank you {{ $name }} for you response, this has been noted.
-                            </blockquote>
-                        @elseif($invited == false)
+                        @if($invited == false)
 
                             <form method="post" action="{{ route('retrieve') }}">
                                 @csrf
@@ -618,11 +614,13 @@
                                 @csrf
                                 <div class="form-group">
                                     <label >Your Name</label>
-                                    <input name="name" type="text" class="form-control form-control-lg" placeholder="Your name" value="{{{ $name ?? null }}}" disabled>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Your name" value="{{{ $name ?? null }}}" disabled>
+                                    <input name="name" type="hidden" value="{{{ $name ?? null }}}" >
                                 </div>
                                 <div class="form-group">
                                     <label>Phone Number</label>
-                                    <input name="phone" type="phone" class="form-control form-control-lg" placeholder="Phone number" value="{{{ $phone ?? null }}}" disabled>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Phone number" value="{{{ $phone ?? null }}}" disabled>
+                                    <input name="phone" type="hidden" value="{{{ $phone ?? null }}}">
                                 </div>
                                 <div class="form-group">
                                     <label>Number of guests</label>
@@ -634,32 +632,26 @@
                                             <label>Attending</label>
                                         </div>
                                     </div>
-                                    <?php
-                                    $confirmed = false;
-                                    if (isset($confirmation) && $confirmation == true) {
-                                        $confirmed = "checked";
-                                    }
-                                    ?>
                                     <div class="col">
                                         <div class="form-group rounded bg-white p-2 border">
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="atttending-yes" name="atttending" class="custom-control-input" {{ $confirmed == true ? 'checked' : '' }}>
-                                                <label class="custom-control-label" for="atttending-yes">Yes, will be there</label>
+                                                <input type="radio" id="attending-yes" name="attending" class="custom-control-input" value="true">
+                                                <label class="custom-control-label" for="attending-yes">Yes, will be there</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="form-group rounded bg-white p-2 border">
                                             <div class="custom-control custom-radio">
-                                                <input type="radio" id="atttending-no" name="atttending" class="custom-control-input" {{ $confirmed == false ? 'checked' : '' }} >
-                                                <label class="custom-control-label" for="atttending-no">Sorry, won't make it</label>
+                                                <input type="radio" id="attending-no" name="attending" class="custom-control-input" value="false">
+                                                <label class="custom-control-label" for="attending-no">Sorry, won't make it</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group text-center">
                                     <button class="btn btn-lg btn-block btn-primary" type="submit">Confirm registry</button>
-                                    <small class="mt-2 text-dark-gray opacity-8">You’ll recieve a confirmation email.</small>
+{{--                                    <small class="mt-2 text-dark-gray opacity-8">You’ll recieve a confirmation email.</small>--}}
                                 </div>
                             </form>
                         @endif
