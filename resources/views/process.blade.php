@@ -164,7 +164,7 @@
                                     @else
                                         guest
                                         @endif
-                                    will not be attending.
+                                    will <strong>not</strong> be attending.
                                 @endif
 
                             </blockquote>
